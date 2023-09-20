@@ -1,21 +1,21 @@
-name: A sample workflow demonstration `just` usage
+name: Type-State presentation
 
 on:
   push:
 
 jobs:
   demo:
-    name: Demo `just`
+    name: Type-State presentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up `just` command runner
-        uses: extractions/setup-just@v1
-        env:
-          # Required to circumvent API rate limiting
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
+
+      - name: Install devbox
+        uses: jetpack-io/devbox-install-action@v0.7.0
+
       - name: Compile presentation
-        run: just --set mode html present
+        run: devbox run build
+
       - name: Upload presentation
         uses: actions/upload-artifact@v3
         with:

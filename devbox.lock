@@ -20,6 +20,12 @@
       "resolved": "github:NixOS/nixpkgs/5148520bfab61f99fd25fb9ff7bfbb50dad3c9db#python311",
       "source": "devbox-search",
       "version": "3.11.4"
+    },
+    "watchexec@1.22.2": {
+      "last_modified": "2023-09-17T10:54:49Z",
+      "resolved": "github:NixOS/nixpkgs/5148520bfab61f99fd25fb9ff7bfbb50dad3c9db#watchexec",
+      "source": "devbox-search",
+      "version": "1.22.2"
     }
   }
 }

@@ -2,7 +2,8 @@
   "packages": [
     "python@3.11",
     "poetry@1.6.1",
-    "marp-cli@3.2.0"
+    "marp-cli@3.2.0",
+    "watchexec@1.22.2"
   ],
   "shell": {
     "init_hook": [
@@ -10,7 +11,7 @@
     ],
     "scripts": {
       "build": [
-        "marp --html presentation.md"
+        "marp --config-file kroki-diagrams/marp.config.js --html presentation.md"
       ]
     }
   }
