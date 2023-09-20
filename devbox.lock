@@ -1,6 +1,12 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "marp-cli@3.2.0": {
+      "last_modified": "2023-09-17T10:54:49Z",
+      "resolved": "github:NixOS/nixpkgs/5148520bfab61f99fd25fb9ff7bfbb50dad3c9db#marp-cli",
+      "source": "devbox-search",
+      "version": "3.2.0"
+    },
     "poetry@1.6.1": {
       "last_modified": "2023-09-17T10:54:49Z",
       "plugin_version": "0.0.1",

@@ -5,11 +5,11 @@ theme: gaia
 
 <!-- _class: lead -->
 
-# `just`, a command runner
+# Type-State Pattern
 
-.NET Hamburg User Group Meetup
+A universal pattern for *less wrong*™ code
 
-2023-04-05
+2023-09-20
 
 Alex Povel
 

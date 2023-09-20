@@ -1,15 +1,16 @@
 {
   "packages": [
     "python@3.11",
-    "poetry@1.6.1"
+    "poetry@1.6.1",
+    "marp-cli@3.2.0"
   ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
+      "build": [
+        "marp --html presentation.md"
       ]
     }
   }
