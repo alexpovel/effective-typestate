@@ -1,0 +1,24 @@
+name: A sample workflow demonstration `just` usage
+
+on:
+  push:
+
+jobs:
+  demo:
+    name: Demo `just`
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up `just` command runner
+        uses: extractions/setup-just@v1
+        env:
+          # Required to circumvent API rate limiting
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Compile presentation
+        run: just --set mode html present
+      - name: Upload presentation
+        uses: actions/upload-artifact@v3
+        with:
+          name: presentation
+          path: presentation.html
+          if-no-files-found: error
