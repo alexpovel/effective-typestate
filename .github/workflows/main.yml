@@ -60,10 +60,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: presentation
+          path: artifacts
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: presentation.html
+          path: artifacts
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
