@@ -11,7 +11,7 @@
     ],
     "scripts": {
       "build": [
-        "marp --config-file kroki-diagrams/marp.config.js --html presentation.md"
+        "marp --config-file kroki-diagrams/marp.config.js --output index.html presentation.md"
       ]
     }
   }
